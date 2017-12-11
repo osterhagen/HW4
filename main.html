@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body onload="load()">
+
+<p id="tle" style="text-align:center; padding-right: 40px;" >Filters
+    <span  id= "add"> <button onclick="editLoad()" id="new">Add New Entry</button></span></p>
+<div id="logEntries" class="small-border">
+    <p>Description contains: <input class="input" id="description" type="text" placeholder="">
+        <button onclick="reloadWithParams()">Refresh</button> </p>
+    <p>Date from: <input class="input" id="from" type="text" placeholder="">
+        through: <input class="input" id="to" type="text" placeholder=""></p>
+    <p><label> <input type="checkbox" id="boolchecked"></label>Show current employee only</p>
+</div>
+
+<br />
+
+<div id ="middleStuff" style="text-align:center;">
+            <span  id="tile">
+                Time Log Entries
+            </span>
+    <span value="0" id="inbetween" >
+                Total hours worked: 0
+            </span>
+    <br />
+    <br />
+</div>
+
+<div class="big-border">
+    <table id="entries" rules="cols">
+        <tr>
+            <th onclick="sortID()" id="emH">Employee</th>
+            <th onclick="sortDate()" id="daH">Date</th>
+            <th onclick="sortHours()" id="hoH">Hours</th>
+            <th onclick="sortDescription()" id="deH">Description</th>
+        </tr>
+    </table>
+</div>
+
+<div id="myModal1" class="modal1">
+    <div class="modal-content">
+            <h2>Time Log Sign In</h2>
+            <br />
+            <p>Employee ID: <input  class="input" id="employeesID" type="text" placeholder="">
+                <br /> <br />
+                Password:<input class="input" id="password" type="text" placeholder=""></p>
+            <br />
+            <p id="submitOut"><button id="submit">Submit</button>
+                Remember Employee ID <label> <input type="checkbox" id="checked"></label> </p>
+        </div>
+
+
+
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal1-content">
+
+        <h2 style="padding-left: 1em;">  Edit Entry</h2>
+        <p id="p">Employee ID: <input  class="input" id="EmployeeID" type="text" placeholder="">
+            &ensp; Hours Worked: <input class="input" id="hoursWorked" type="text" placeholder="" ></p>
+        <p id="pa">Date Worked: <input style="width:123px;" class="input" id="dateWorked" type="text" placeholder="" >
+            &ensp; Billable? <label><input type="checkbox" id="billable"></label>
+        <p>Description:</p>
+        <textarea class="input" id="descriptionBox" placeholder=""></textarea>
+        &ensp;  <br /> <span id = "total"> <button onclick="determineSave()" >Save</button>
+                &ensp;<button onclick="determine()" id="deleteButton" hidden>Delete</button></span>
+    </div>
+
+</div>
+
+<div id="alertModal" class="modal2">
+    <div class="alertModal-content">
+        <p id="alertMessage"></p>
+    </div>
+</div>
+
+<div id="confirmModal" class="modal3">
+    <div id="cMC" class="confirmModal-content">
+        <p id="confirmMessage"></p>
+        <span><button onclick="deleteRow()" id="yes">Yes</button><button onclick="refresh()" id="no">no</button></span>
+    </div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript" src="./main.js"></script>
+<script type="text/javascript" src="./modal.js"></script>
+<script type="text/javascript" src="./edit.js"></script>
+<script type="text/javascript" src="./signin.js"></script>
+<script type="text/javascript" src="./sorting.js"></script>
+<link rel="stylesheet" type="text/css" href="signin.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="edit.css">
+<link rel="stylesheet" type="text/css" href="modal.css">

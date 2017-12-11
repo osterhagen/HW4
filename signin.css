@@ -1,0 +1,12 @@
+#emp {
+    text-align: center;
+}
+#employeeID {
+    width:120px;
+}
+#password {
+    width:120px;
+}
+#submitOut {
+    margin: auto;
+}

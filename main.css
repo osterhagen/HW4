@@ -1,0 +1,65 @@
+.small-border {
+    background-color: white;
+    border-color: black;
+    margin: auto;
+    border-width: 1px;
+    border-style: solid;
+    width:500px;
+    height: 125px;
+}
+.big-border {
+    background-color: white;
+    border-color: black;
+    margin: auto;
+    border-width: 1px;
+    border-style: solid;
+    width:500px;
+    height: 250px;
+}
+#inbetween{
+    padding-left: 10em;
+}
+#tle, #tile {
+    font-size: 18pt;
+}
+#a{
+    padding-left: 1.25em;
+}
+#descriptionBox {
+    width:400px;
+    height:70px;
+    margin-left: 20px;
+}
+#logEntries {
+    width:500px;
+    overflow-y: auto;
+}
+table {
+    overflow: hidden;
+    margin: auto;
+    width:100%;
+    text-align: left;
+    overflow-y: auto;
+}
+#employee {
+    width:75px;
+}
+#date {
+    width:75px;
+}
+#hours {
+    width:75px;
+}
+
+#description {
+    width:250px;
+}
+
+table, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+#add{
+    padding-left: 300px;
+}

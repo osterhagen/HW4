@@ -1,0 +1,23 @@
+.thick-green-border {
+    background-color: white;
+    border-color: black;
+    margin: auto;
+    border-width: 1px;
+    border-style: solid;
+    width:500px;
+    height: 300px;
+}
+
+#p, #pa{
+    padding-left: 1.25em;
+}
+#descriptionBox {
+    width:350px;
+    height:100px;
+    margin-left: 20px;
+}
+
+#total{
+    padding-left:385px;
+    font-size: 14pt;
+}
